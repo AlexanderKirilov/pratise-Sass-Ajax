@@ -3371,5 +3371,43 @@ html, body {
   @media (min-width: 1200px) {
     #mainContainer {
       width: 1170px; } }
+  #mainContainer header {
+    box-shadow: 0 0 10px;
+    margin-bottom: 4em;
+    border-radius: 0 0 10px 10px;
+    margin-left: -15px;
+    margin-right: -15px; }
+    #mainContainer header:before, #mainContainer header:after {
+      content: " ";
+      display: table; }
+    #mainContainer header:after {
+      clear: both; }
+    #mainContainer header .headerTitle {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 15px; }
+      @media (min-width: 992px) {
+        #mainContainer header .headerTitle {
+          float: left;
+          width: 25%; } }
+    #mainContainer header span {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 18px; }
+      @media (min-width: 992px) {
+        #mainContainer header span {
+          margin-left: 50%; } }
+      @media (min-width: 992px) {
+        #mainContainer header span {
+          float: left;
+          width: 25%; } }
 
 /*# sourceMappingURL=index.css.map */

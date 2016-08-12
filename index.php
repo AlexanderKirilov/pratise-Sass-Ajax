@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $style = "";
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,10 @@ if(!isset($_SESSION['logged']) || !$_SESSION['logged'] == true){
 }
 ?>
 <main id="mainContainer" style="<?=$style?>">
-	<?php require 'assets/snippets/groceries.html'?>
+	<?php 
+		$usrName = $_SESSION['usrName'];
+		require 'assets/snippets/groceries.php' 
+	?>
 </main>
 <script src="assets/js/index.js">
 </script>

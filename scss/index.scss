@@ -50,4 +50,35 @@ html,body{
 	@media (min-width: $screen-lg-min) {
 	width: $container-lg;
 	}
+
+
+
+	header{
+
+		box-shadow: 0 0 10px;
+		margin-bottom:4em;
+
+		border-radius: 0 0 10px 10px;
+		@include make-row;
+		
+		.headerTitle{
+			@include make-md-column(3);
+			
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom:15px;
+		}
+
+		span{
+			$margin-top-header-computed: floor(($font-size-h1 - $font-size-h4));
+			@include make-md-column-offset(6);
+			@include make-md-column(3);
+			font-size:$font-size-h4;
+			
+			text-align:center;
+			margin-top:$margin-top-header-computed;
+		}
+
+
+	}
 }
