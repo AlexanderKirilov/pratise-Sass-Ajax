@@ -1,0 +1,53 @@
+@import '../assets/stylesheets/bootstrap';
+
+html,body{
+	padding:0;
+	margin:0;
+
+	width:100%;
+
+}
+
+#logBGCover{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+
+	z-index:1000;
+}
+
+#logFormContainer{
+	margin:0 auto;
+	width:300px;
+
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+
+	padding:50px;
+
+
+	input {
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+	}
+
+	button{
+	}
+}
+
+#mainContainer{
+	@include container-fixed;
+
+	@media (min-width: $screen-sm-min) {
+	width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+	width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+	width: $container-lg;
+	}
+}
