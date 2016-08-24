@@ -8,7 +8,7 @@ $pass = isset($_POST['usrPass']) ? $_POST['usrPass'] : 0;
 if(isset($_POST['usrName'])  && isset($_POST['usrName'])){
 	$_SESSION['logged'] = true;
 	$_SESSION['usrName'] = $name;
-	echo json_encode('success');
+	echo json_encode($name);
 }else{
 	echo json_encode('empty');
 	die();

@@ -1,7 +1,7 @@
 <header class="headerRow">
 	<h2 class="headerTitle">Groceries</h2>
-	<span>
-	Welcome <?= $usrName ?>
+	<span id="headerGreeting">
+	<?= isset($usrName)? "Welcome $usrName" : '' ?>
 	</span>
 </header>
 

@@ -19,13 +19,14 @@ if(logForm !== null){
 		event.preventDefault();
 
 		Ajax.request('POST','logValidate.php', true, function(response){
-			console.log(response);
+
 			if(response == "empty"){
 
 			}else{
-				console.log("here");
+
 				logFormContainer.style.display = "none";
 				main.style.display = "block";
+ 				document.getElementById('headerGreeting').innerHTML = 'Welcome '+JSON.parse(response);
 			}
 		}, getData());
 	})
